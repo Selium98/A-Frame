@@ -19,5 +19,6 @@ If no server (XAMPP or WAMP) is present -
 https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server
 
 Follow the steps given in the above link.
+
 In the project files, use the keys W, A, S, D to move around the free space. Use mouse to hover and span over the free space.
 
