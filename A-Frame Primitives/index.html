@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A-Frame Primitives</title>
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+	<a-scene>
+		<a-assets>
+			<img id="img7" src="images/image7.jpg">
+			<img id="img4" src="images/image4.jpg">
+		</a-assets>
+
+		<a-text value="Normal Box" position="-2.4 0.3 -3" color="black" width="3" side="double"></a-text>
+
+		<a-text value="Box Primitives by Selium98" position="-2.6 5.6 -8" color="black" width="10" side="double"></a-text>
+
+		<a-text value="Wrapped Box" position="-0.5 0.3 -3" color="black" width="3" side="double"></a-text>
+
+		<a-text value="Box complete from inside" position="-0.6 0.15 -3" color="black" width="2" side="double"></a-text>
+
+		<a-text value="Entity Box" position="1.6 0.3 -3" color="black" width="3" side="double"></a-text>
+
+		<a-text value="Color changes with refresh" position="1.4 0.15 -3" color="black" width="2" side="double"></a-text>
+
+
+
+		<a-image src="#img4" position="0 1.6 -8" width="1" height="0.707" scale="12 9 2"></a-image>
+
+		<!-- normal box -->
+
+		<a-box color="white" position="-2 1.2 -4" side="double"></a-box>
+
+		<!-- entity box -->
+
+		<a-entity position="2 1.2 -4" geometry="primitive:box" side="double"></a-entity>
+
+		<!-- modfied entity box -->
+
+		<a-entity position="0 1.2 -4" geometry="primitive:box" material="shaded:standard; color:white; side:double; src:#img7"></a-entity>
+
+			<a-sky color="#1bdbde"></a-sky>
+
+	</a-scene>
+</body>
+</html>
