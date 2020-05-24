@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Textures and Materials</title>
+	 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+	<a-scene>
+
+		<a-assets>
+			<img id="texture" src="textures/tex1.jpg">
+			<img id="concrete" src="textures/tex2.jpg">
+			<img id="brick" src="textures/tex3.jpg">
+			<img id="grass" src="textures/tex4.jpg">
+		</a-assets>
+
+		<!--grass box -->
+
+		<a-box color="#ffff" repeat="1 1" width="4" height="4" depth="4" position="-9 1.5 -9" rotation="30 0 0" src="textures/tex4.jpg" normal-map="#grass" normal-scale="2 2" normal-texture-repeat="1 1" roughness="0.8" scale="1 1 1"></a-box>
+
+		<a-text value="Basic texture box" position="-10 5.5 -7"></a-text>
+
+		<!--blue box -->
+
+		<a-box color="#fffff" repeat="1 1" width="4" height="4" depth="4" position="-3 1.5 -9" rotation="30 0 0" src="textures/tex1.jpg" normal-map="#texture" normal-scale="1 1" normal-texture-repeat="1 1" roughness="0.6" scale="1 1 1"></a-box>
+
+		<a-text value="Making texture glossy and a 3D effect" position="-5 5.5 -7"></a-text>
+
+		<!--brown box -->
+
+		<a-box color="#825944" normal-map="#concrete" repeat="1 1" normal-texture-repeat="1 1" normal-scale="2 2" width="4" height="4" depth="4" position="3 1.5 -9" rotation="30 0 0" scale="-1 1 1" roughness="0.3"></a-box>
+
+		<a-text value="Using only the texture and custom color" position="1 5.5 -7"></a-text>
+
+		<!--brick box -->
+
+		<a-box material = "color:#fffff; repeat: 1 1; src:#brick; roughness:0.3" width="4" height="4" depth="4" position="9 1.5 -9" scale="-1 1 1" rotation="30 0 0"></a-box>
+
+		<a-text value="Using the Material Tag" position="8 5.5 -7"></a-text>
+
+		<a-sky color="#424242"></a-sky>
+
+		<a-text value="Basic texture by SELIUM98" position="-1.2 -0.2 -3"></a-text>
+	</a-scene>
+
+</body>
+</html>
